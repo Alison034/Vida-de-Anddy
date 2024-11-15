@@ -1,0 +1,67 @@
+body { /*identifica la parte visible de un sitio web y contien el cotenido principal de la pagina*/
+    font-family: Arial, sans-serif; /*define una lista de fuentes con un orden de priorida, para utilizar en un elemento seleccionasdo*/
+    margin: 0; /*establece el margen par los cuatro lados*/
+    padding: 0;/*crea el espacio alrededro del contenido de un elemento*/
+}
+
+header {/*indica el avegador que el contenido de esta etiqueta es la cabecera de la pagina*/
+    background-color: crimson;/*define el color de fondo de un elemento*/
+    color: rgb(254, 254, 254);/*se utiliza para cambiar el color de los tectos, fondo y otros elentos*/
+    padding: 10px 0;/*crea el espacio alrededor del contenido de un elemento*/
+    text-align: center;/*establece la alineacion horizontal del contenido a nivel de linea dentro de un elementpo de bloque */
+} 
+
+nav ul {/*define una lista no ordenada y el elemento*/
+    list-style-type: none;/*establece el tipo de viñetas para la lista*/
+    padding: 0;/*crea el espacio alrededro del contenido de un elemento*/
+}
+
+nav ul li {/*especifica los items de la lista*/
+    display: inline;/*estable como se visualiza un elemento*/
+    margin: 0 15px;/*establece el margen par los cuatro lados*/
+}
+
+nav ul li a {/*indica que se tiene un menu de navegacion*/
+    color: rgb(255, 255, 255);/*se utiliza para cambiar el color de los tectos, fondo y otros elentos*/
+    text-decoration: none;/*se una para establecer el formato de texto a subrayado*/
+}
+
+main {/*representa el contenido principal de <doby> de un documenti o aplicacion*/
+    padding: 20px;/*crea el espacio alrededro del contenido de un elemento*/
+}
+
+section {/* se utiliza para dividir secciones de una PAGINA WEB*/
+    margin-bottom: 20px;/*establece el espacio requerido en la partte inferior de un elemento*/
+    padding: 15px;/*crea el espacio alrededro del contenido de un elemento*/
+    border: 1px solid #d23636;/*definir los bordes de un elemento en ina sola regla*/
+}
+
+footer {/*indica el termino del sitio web dentro de la estructura*/
+    text-align: center;/*estable la alineacion horizantal del texto de un elemento de un bloque */
+    padding: 10px 0;/*crea el espacio alrededro del contenido de un elemento*/
+    background-color: #c23e3e;/*define el color de fondo de un elemento*/
+}
+
+.columnas {/*definir un diseño multicolumnas en un sutio web*/
+    display: flex;/*estable como se visualiza un elemento*/
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.columna {
+    flex: 1; /* Cada columna tomará el mismo espacio */
+    margin: 0 10px; /* Espacio entre columnas */
+    padding: 15px;
+    border: 1px solid #ff6060;
+    box-shadow: 0 2px 5px rgba(255, 102, 102, 0.1);
+}
+
+@media (max-width: 768px) {
+    .columnas {
+        flex-direction: column; /* Cambia a una columna en pantallas más pequeñas */
+    }
+
+    .columna {
+        margin: 10px 0; /* Espacio vertical en pantallas pequeñas */
+    }
+}
